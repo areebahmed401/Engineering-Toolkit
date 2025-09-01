@@ -1,0 +1,6 @@
+[theme]
+primaryColor = "#FF4B4B"              # Red accents
+backgroundColor = "#0E1117"           # Pure black background
+secondaryBackgroundColor = "#262730"  # Slightly lighter black for widgets
+textColor = "#FAFAFA"                 # White text
+font = "sans serif"

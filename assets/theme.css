@@ -1,0 +1,47 @@
+/* Global background and text */
+.stApp {
+    background-color: black;
+    color: white;
+}
+
+/* Headings in red */
+h1, h2, h3, h4, h5, h6 {
+    color: red !important;
+}
+
+/* Sidebar background */
+section[data-testid="stSidebar"] {
+    background-color: #111 !important;
+    color: white !important;
+}
+
+/* Buttons */
+.stButton button {
+    background-color: red !important;
+    color: white !important;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+}
+.stButton button:hover {
+    background-color: #cc0000 !important;
+    color: white !important;
+}
+
+/* Text, markdown, inputs */
+.stMarkdown, .stText, .stTextInput, .stNumberInput, .stSelectbox {
+    color: white !important;
+}
+
+/* Inputs (background dark, text white) */
+input, textarea, select {
+    background-color: #222 !important;
+    color: white !important;
+    border: 1px solid #555 !important;
+    border-radius: 5px !important;
+}
+
+/* Divider line color */
+hr {
+    border: 1px solid #444 !important;
+}
