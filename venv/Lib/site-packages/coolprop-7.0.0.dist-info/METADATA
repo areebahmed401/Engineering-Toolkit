@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: coolprop
+Version: 7.0.0
+Summary: Open-source thermodynamic and transport properties database
+Home-page: http://www.coolprop.org
+Author: Ian Bell
+Author-email: ian.h.bell@gmail.com
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: summary

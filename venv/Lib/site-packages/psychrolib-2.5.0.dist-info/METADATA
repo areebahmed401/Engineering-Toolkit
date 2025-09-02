@@ -1,0 +1,23 @@
+Metadata-Version: 2.4
+Name: PsychroLib
+Version: 2.5.0
+Summary: Library of psychrometric functions to calculate thermodynamic properties of air
+Home-page: https://github.com/psychrometrics/psychrolib
+Author: D. Thevenard and D. Meyer
+Author-email: didierthevenard@users.noreply.github.com
+Maintainer: The PsychroLib Developers
+License: MIT
+Platform: Windows
+Platform: Linux
+Platform: Solaris
+Platform: Mac OS-X
+Platform: Unix
+Requires-Python: >=3.6
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: license
+Dynamic: maintainer
+Dynamic: platform
+Dynamic: requires-python
+Dynamic: summary
