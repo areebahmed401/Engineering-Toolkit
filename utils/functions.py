@@ -1,4 +1,5 @@
 import math
+from .constants import PIPE_THERMAL_CONDUCTIVITY
 
 def colebrook_white(Re, roughness, D):
     epsilon_D = roughness / D
@@ -37,17 +38,28 @@ def get_equivalent_length(fittings, diameter):
             breakdown[k] = 0.0
     return Le_total, breakdown
 
-def calc_insulation_thickness(d, T_fluid_c, T_atm_c, q_max, k_ins):
+def calc_insulation_thickness(d, T_fluid_c, T_atm_c, q_max, k_ins, pipe_material="Carbon Steel"):
+    """Calculate required insulation thickness considering pipe material conductivity."""
     deltaT = T_fluid_c - T_atm_c
     if deltaT <= 0:
         return 0.0
+    
     try:
-        exponent = (2.0 * math.pi * k_ins * deltaT) / q_max
-        if exponent > 700:
+        # Get pipe thermal conductivity
+        k_pipe = PIPE_THERMAL_CONDUCTIVITY.get(pipe_material, 45.0)  # Default to Carbon Steel if unknown
+        
+        r1 = d / 2.0  # Pipe outer radius
+        
+        # Calculate composite thermal resistance using pipe and insulation
+        exponent = (2.0 * math.pi * deltaT) / q_max
+        denominator = (1/k_pipe + 1/k_ins)
+        
+        if exponent/denominator > 700:
             return float('inf')
-        r1 = d / 2.0
-        r2 = r1 * math.exp(exponent)
-        return max(0.0, (r2 - r1) * 1000.0) * 1.1
+            
+        r2 = r1 * math.exp(exponent/denominator)
+        return max(0.0, (r2 - r1) * 1000.0)  # Convert to mm
+        
     except Exception:
         return float('nan')
 
