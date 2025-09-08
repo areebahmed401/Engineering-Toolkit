@@ -51,3 +51,14 @@ BOLTZMANN_CONSTANT = 1.380649e-23
 
 # Avogadro's number (1/mol)
 AVOGADRO_NUMBER = 6.02214076e23
+
+# --- Material Properties ---
+
+# Pipe thermal conductivity (W/m·K)
+PIPE_THERMAL_CONDUCTIVITY = {
+    "Carbon Steel": 45.0,
+    "Stainless Steel": 16.0,
+    "PVC": 0.19,
+    "Copper": 401.0,
+    "Cast Iron": 50.0
+}
