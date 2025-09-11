@@ -1,8 +1,8 @@
-# Toolkit with all your enegineering needs
+# Toolkit With All Your Engineering Needs
 
 Looking for something to use for your every day engineering practices as a mechanical engineer?
 
-## How to get started
+## How To Get Started
 
 1. Clone the repository
 2. Install the requirements using `pip install -r requirements.txt`
@@ -12,20 +12,22 @@ Looking for something to use for your every day engineering practices as a mecha
 ## Features
 
 1. Pipe sizing and insulation sizing
-   a. Based on data from Crane TP-410
-   b. Based on data from ASHRAE Handbook of HVAC Systems and Equipment
-   c. Based on darcy weisbach equation
-   d. Insulation sizing based on conduction and convection losses
+    - Based on data from Crane TP-410
+    - Based on data from ASHRAE Handbook of HVAC Systems and Equipment
+    - Based on Darcy-Weisbach equation
+    - Insulation sizing based on conduction (heat transfer through materials) and convection losses (heat transfer to surrounding air)
+    - Optmization  of insulation based on diminishing returns on heat loss
 2. Temperature-Entropy plotting of various fluids
-   a. Refrigerants
-   b. Water/Steam
-   c. Plots a process on the T-S diagram (isenthalpic, isentropic, constant pressure, constant volume)
+    - Refrigerants
+    - Water/Steam
+    - Plots a process on the T-S diagram (isenthalpic, isentropic, constant pressure, constant volume)
 3. Pressure-Enthalpy plotting of various fluids
-    a. Refrigerants
-    b. Water/Steam
-    c. Plots a process on the P-h diagram (isenthalpic, isentropic, constant pressure, constant volume)
+    - Refrigerants
+    - Water/Steam
+    - Plots a process on the P-H diagram (isenthalpic, isentropic, constant pressure, constant volume)
 4. Pump Sizing
 5. Vacuum Pump Sizing
 6. Cooling Tower Sizing based on location
+7. Psychrometric chart plotting
 
 Areeb Ahmed | Mechanical Engineer
