@@ -210,6 +210,7 @@ PIL/report.py,sha256=6m7NOv1a24577ZiJoxX89ip5JeOgf2O1F95f6-1K5aM,105
 pillow-11.3.0.dist-info/INSTALLER,sha256=zuuue4knoyJ-UwPPXg8fezS7VCrXJQrAP7zeNuwvFQg,4
 pillow-11.3.0.dist-info/METADATA,sha256=9kqN5VBRkuotyWIwvRVvOpQAlhPyFhiyFYUBSZbAeu0,9200
 pillow-11.3.0.dist-info/RECORD,,
+pillow-11.3.0.dist-info/REQUESTED,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
 pillow-11.3.0.dist-info/WHEEL,sha256=8UP9x9puWI0P1V_d7K2oMTBqfeLNm21CTzZ_Ptr0NXU,101
 pillow-11.3.0.dist-info/licenses/LICENSE,sha256=GVRL9Tr2iaMxmk-1BnNw8PDWjSxTAKIVdnT174pP2WU,76724
 pillow-11.3.0.dist-info/top_level.txt,sha256=riZqrk-hyZqh5f1Z0Zwii3dKfxEsByhu9cU9IODF-NY,4
